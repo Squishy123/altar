@@ -15,6 +15,8 @@ import { connect } from 'react-redux';
 
 import { changeBG } from '../../state/actions';
 
+import Navbar from '../navbar/navbar';
+
 const mapStateToProps = state => {
     return { bgColor: state.bgColor };
 };
@@ -38,7 +40,8 @@ const Layout = ({ bgColor, changeBG, children }) => (
         `}
         render={data => (
             <>
-                <div className="main" style={{ backgroundColor: bgColor }}>
+                <Navbar/>
+                <div className="main-container"  style={{ backgroundColor: bgColor }}>
                     <main>{children}</main>
                     <footer />
                 </div>

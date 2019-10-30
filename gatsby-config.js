@@ -1,7 +1,7 @@
 module.exports = {
     siteMetadata: {
-        title: `Redux Starter`,
-        description: `Gatsby starter with redux built in`,
+        title: `Altar`,
+        description: `Free version of Ritual`,
         author: `@squishy123`,
     },
     plugins: [
@@ -18,8 +18,8 @@ module.exports = {
         {
             resolve: `gatsby-plugin-manifest`,
             options: {
-                name: `easyread`,
-                short_name: `redux-starter`,
+                name: `Altar`,
+                short_name: `altar`,
                 start_url: `/`,
                 background_color: `white`,
                 theme_color: `white`,
