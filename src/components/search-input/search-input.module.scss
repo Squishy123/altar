@@ -1,0 +1,38 @@
+.suggestionsContainer {
+    width: 100%;
+    background-color: white;
+    color: black;
+    position: absolute;
+}
+
+.container {
+    position: relative;
+    margin-right: auto;
+    width: 100%;
+    input[type="text"] {
+        width: 100%;
+    }
+
+    .suggestionsContainer {
+        overflow-y: auto;
+        max-height: 300px;
+        opacity: 0;
+        transition: .25s linear;
+    }
+}
+
+.container{
+    input:focus + .suggestionsContainer{
+        opacity: 1;
+        transition: .25s linear;
+    }
+}
+
+.suggestion {
+    padding: 10px 5px;
+    font-size: 18px;
+}
+
+.suggestion:hover{
+    background-color: #e4ebf3;
+}
